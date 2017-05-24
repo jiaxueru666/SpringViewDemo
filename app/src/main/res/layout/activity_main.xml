@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.springviewdemo.MainActivity">
+<android.support.design.widget.TabLayout
+    app:tabSelectedTextColor="#ff00"
+    app:tabTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tabs"></android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager"></android.support.v4.view.ViewPager>
+</RelativeLayout>
